@@ -5,18 +5,18 @@ let choiceD = document.getElementById("choiceD");
 
 function pickChoice(string) {
     resetChoices();
-    document.getElementById(`choice${string}`).classList.add("border-blue-800");
+    document.getElementById(`choice${string}`).classList.add("border-custom-secondary");
     console.log(string);
 }
 
 function resetChoices() {
-    choiceA.classList.remove("border-blue-800");
-    choiceB.classList.remove("border-blue-800");
-    choiceC.classList.remove("border-blue-800");
-    choiceD.classList.remove("border-blue-800");
+    choiceA.classList.remove("border-custom-secondary");
+    choiceB.classList.remove("border-custom-secondary");
+    choiceC.classList.remove("border-custom-secondary");
+    choiceD.classList.remove("border-custom-secondary");
     
-    choiceA.classList.add("border-slate-900");
-    choiceB.classList.add("border-slate-900");
-    choiceC.classList.add("border-slate-900");
-    choiceD.classList.add("border-slate-900");
+    choiceA.classList.add("border-custom-primary");
+    choiceB.classList.add("border-custom-primary");
+    choiceC.classList.add("border-custom-primary");
+    choiceD.classList.add("border-custom-primary");
 }
