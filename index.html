@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAT Test Question</title>
+    <title>Rapid SAT Questions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="index.js" defer></script>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-    <div class="pt-24 flex mx-auto text-custom">
-        <div id="text" class="w-1/2 m-12 text-lg">
-            <p>
-                To make her art more widely available, graphic artist Elizabeth Catlett turned to linocuts. In linocut printing, an artist carves an image into a sheet of linoleum to create a stamp that is used to mass-produce prints. In the linocut series The Black Woman (1946–1947), Catlett depicts the everyday experiences of Black women alongside the achievements of well-known Black women. This pairing invites the viewer to draw connections among the women. The linocut process enabled Catlett’s work to reach a wide audience and supported her aim to unite Black women through her art.
-            </p>
+    <div class="pt-24 w-1/2 mx-auto flex flex-col text-custom text-center">
+        <h1 class="text-4xl font-bold">RapidSAT</h1>
+        <div class="md:w-3/4 flex mx-auto text-custom">
+            <div id="text" class="w-1/2 m-12 mt-20 text-lg">
+                <div class="choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-custom-primary cursor-pointer" id="math" onclick="pickType('math')">Math</div>
+                <div class="choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-black cursor-pointer" id="raw" onclick="pickType('raw')">Reading & Writing</div>
+            </div>
+            <div id="text" class="w-1/2 m-12 text-lg">
+                <div class="choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-custom-primary cursor-pointer" id="easy" onclick="pickDifficulty('easy')">Easy</div>
+                <div class="choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-black cursor-pointer" id="medium" onclick="pickDifficulty('medium')">Medium</div>
+                <div class="choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-black cursor-pointer" id="hard" onclick="pickDifficulty('hard')">Hard</div>
+            </div>
         </div>
-        <div id="choices" class="w-1/2 m-12">
-            <p id="question" class="font-bold text-xl pb-4">According to the text, what is significant about Catlett’s use of linocut printing?</p>
-            <div class="choice px-6 py-2 mb-4 text-lg border-4 border-solid rounded-2xl border-custom-primary cursor-pointer" id="choiceA" onclick="pickChoice('A')">A. Linocut printing involved using materials that were readily available to Catlett.</div>
-            <div class="choice px-6 py-2 mb-4 text-lg border-4 border-solid rounded-2xl border-custom-primary cursor-pointer" id="choiceB" onclick="pickChoice('B')">B. Linocut printing helped Catlett use art to connect people, especially Black women</div>
-            <div class="choice px-6 py-2 mb-4 text-lg border-4 border-solid rounded-2xl border-custom-primary cursor-pointer" id="choiceC" onclick="pickChoice('C')">C. Catlett became commercially successful once she started using linocut printing.</div>
-            <div class="choice px-6 py-2 mb-4 text-lg border-4 border-solid rounded-2xl border-custom-primary cursor-pointer" id="choiceD" onclick="pickChoice('D')">D. Catlett was one of the first Black artists to use linocut printing.</div>
-        </div>
+        <p class="px-3 w-1/4 mx-auto py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-custom-primary cursor-pointer" onclick="start()">Start</p>
     </div>
 </body>
 </html>

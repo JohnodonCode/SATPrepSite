@@ -1,22 +1,64 @@
-let choiceA = document.getElementById("choiceA");
-let choiceB = document.getElementById("choiceB");
-let choiceC = document.getElementById("choiceC");
-let choiceD = document.getElementById("choiceD");
+let type = 0;
+let difficulty = 0;
 
-function pickChoice(string) {
-    resetChoices();
-    document.getElementById(`choice${string}`).classList.add("border-custom-secondary");
-    console.log(string);
+let math = document.getElementById("math");
+let raw = document.getElementById("raw");
+
+let easy = document.getElementById("easy");
+let medium = document.getElementById("medium");
+let hard = document.getElementById("hard");
+
+function pickType(string) {
+    resetTypes();
+    document.getElementById(string).classList.remove("border-black");
+    document.getElementById(string).classList.add("border-custom-primary");
+
+    switch (string) {
+        case "math":
+            type = 0;
+            break;
+        case "raw":
+            type = 1;
+            break;
+    }
 }
 
-function resetChoices() {
-    choiceA.classList.remove("border-custom-secondary");
-    choiceB.classList.remove("border-custom-secondary");
-    choiceC.classList.remove("border-custom-secondary");
-    choiceD.classList.remove("border-custom-secondary");
-    
-    choiceA.classList.add("border-custom-primary");
-    choiceB.classList.add("border-custom-primary");
-    choiceC.classList.add("border-custom-primary");
-    choiceD.classList.add("border-custom-primary");
+function resetTypes() {
+    math.classList.remove("border-custom-primary");
+    raw.classList.remove("border-custom-primary");
+
+    math.classList.add("border-black");
+    raw.classList.add("border-black");
+}
+
+function pickDifficulty(string) {
+    resetDifficulties();
+    document.getElementById(string).classList.remove("border-black");
+    document.getElementById(string).classList.add("border-custom-primary");
+
+    switch (string) {
+        case "easy":
+            difficulty = 0;
+            break;
+        case "medium":
+            difficulty = 1;
+            break;
+        case "hard":
+            difficulty = 2;
+            break;
+    }
+}
+
+function resetDifficulties() {
+    easy.classList.remove("border-custom-primary");
+    medium.classList.remove("border-custom-primary");
+    hard.classList.remove("border-custom-primary");
+
+    easy.classList.add("border-black");
+    medium.classList.add("border-black");
+    hard.classList.add("border-black");
+}
+
+function start() {
+    window.location.href = `/question?t=${type}&d=${difficulty}`;
 }
