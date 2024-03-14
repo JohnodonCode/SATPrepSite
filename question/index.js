@@ -163,6 +163,10 @@ function nextQuestion() {
     if(questionNumber < possiblequestions.length - 1) {
         questionNumber++;
     }
+    else {
+        questionNumber = 0;
+    }
+    console.log(questionNumber);
 
     setQuestion();
     rationale.innerHTML = "";

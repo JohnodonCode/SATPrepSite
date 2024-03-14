@@ -199,8 +199,8 @@ const questions = {
                 "4",
                 "8"
             ],
-            "answer": 0,
-            "rationale": "Choice A is correct. It's given that the store's sales of a certain Greek yogurt totaled <strong>1,277.94</strong> dollars last month. It's also given that the equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. Since <strong>x</strong> represents the number of smaller containers of yogurt sold, the expression <strong>5.48x</strong> represents the total sales, in dollars, from smaller containers of yogurt. This means that <strong>x</strong> smaller containers of yogurt were sold at a price of <strong>5.48</strong> dollars each. Therefore, according to the equation, <strong>5.48x</strong> represents the price, in dollars, of each smaller container. <br/><br/>Choice B is incorrect. This expression represents the total sales, in dollars, from selling <strong>y</strong> larger containers of yogurt. <br/><br/>Choice C is incorrect. This value represents the price, in dollars, of each larger container of yogurt.<br/><br/>Choice D is incorrect. This expression represents the total sales, in dollars, from selling <strong>x</strong> smaller containers of yogurt."
+            "answer": 3,
+            "rationale": "Choice D is correct. The value of g(0) is found by substituting 0 for x in the function g. This yields g(0) = -0 + 8, which can be rewritten as g(0)=8. </br></br>Choice A is incorrect and may result from misinterpreting the equation as g(x) = x + (-8) instead of g(x) = -x + 8. Choice B is incorrect. This is the value of x, not g(x). Choice C is incorrect and may result from calculation errors."
         },
         {
           "text": "A store sells two different-sized containers of a certain Greek yogurt. The store’s sales of this Greek yogurt totaled <strong>1,277.94</strong> dollars last month. The equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold.",
@@ -215,20 +215,20 @@ const questions = {
           "rationale": "Choice A is correct. It's given that the store's sales of a certain Greek yogurt totaled <strong>1,277.94</strong> dollars last month. It's also given that the equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. Since <strong>x</strong> represents the number of smaller containers of yogurt sold, the expression <strong>5.48x</strong> represents the total sales, in dollars, from smaller containers of yogurt. This means that <strong>x</strong> smaller containers of yogurt were sold at a price of <strong>5.48</strong> dollars each. Therefore, according to the equation, <strong>5.48x</strong> represents the price, in dollars, of each smaller container. <br/><br/>Choice B is incorrect. This expression represents the total sales, in dollars, from selling <strong>y</strong> larger containers of yogurt. <br/><br/>Choice C is incorrect. This value represents the price, in dollars, of each larger container of yogurt.<br/><br/>Choice D is incorrect. This expression represents the total sales, in dollars, from selling <strong>x</strong> smaller containers of yogurt."
       },
       {
-        "text": "A store sells two different-sized containers of a certain Greek yogurt. The store’s sales of this Greek yogurt totaled <strong>1,277.94</strong> dollars last month. The equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. According to the equation, which of the following represents the price, in dollars, of each smaller container?",
+        "text": "John paid a total of <strong>$165</strong> for a microscope by making a down payment of <strong>$37</strong>plus <strong>p</strong> monthly payments of <strong>$16</strong> each. Which of the following equations represents this situation?",
         "question": "Which choice most logically completes the text?",
         "choices": [
-            "<strong>5.48</strong>",
-            "<strong>7.30y</strong>",
-            "<strong>7.30</strong>",
-            "<strong>5.48x</strong>"
+            "<strong>16p - 37 = 165</strong>",
+            "<strong>37p - 16 = 165</strong>",
+            "<strong>16p + 37 = 165</strong>",
+            "<strong>37p + 16 = 165</strong>"
         ],
-        "answer": 0,
-        "rationale": "Choice A is correct. It's given that the store's sales of a certain Greek yogurt totaled <strong>1,277.94</strong> dollars last month. It's also given that the equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. Since <strong>x</strong> represents the number of smaller containers of yogurt sold, the expression <strong>5.48x</strong> represents the total sales, in dollars, from smaller containers of yogurt. This means that <strong>x</strong> smaller containers of yogurt were sold at a price of <strong>5.48</strong> dollars each. Therefore, according to the equation, <strong>5.48x</strong> represents the price, in dollars, of each smaller container. <br/><br/>Choice B is incorrect. This expression represents the total sales, in dollars, from selling <strong>y</strong> larger containers of yogurt. <br/><br/>Choice C is incorrect. This value represents the price, in dollars, of each larger container of yogurt.<br/><br/>Choice D is incorrect. This expression represents the total sales, in dollars, from selling <strong>x</strong> smaller containers of yogurt."
+        "answer": 3,
+        "rationale": "Choice C is correct. It’s given that John made a <strong>$16</strong>payment each month for <strong>p</strong>months. The total amount of these payments can be represented by the expression <strong>16p</strong>. The down payment can be added to that amount to find the total amount John paid, yielding the expression <strong>16p + 37</strong>. It’s given that John paid a total of <strong>$165</strong>. Therefore, the expression for the total amount John paid can be set equal to that amount, yielding the equation . </br></br>Choice A is incorrect and may result from conceptual or calculation errors. </br></br>Choice B is incorrect and may result from conceptual or calculation errors. </br></br>Choice D is incorrect and may result from conceptual or calculation errors."
      },
      {
-      "text": "A store sells two different-sized containers of a certain Greek yogurt. The store’s sales of this Greek yogurt totaled <strong>1,277.94</strong> dollars last month. The equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. According to the equation, which of the following represents the price, in dollars, of each smaller container?",
-      "question": "Which choice most logically completes the text?",
+      "text": "Which expression is a factor of <strong>2x^2 + 38x + 10</strong>?",
+      "question": "",
       "choices": [
           "<strong>5.48</strong>",
           "<strong>7.30y</strong>",
