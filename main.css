@@ -6,6 +6,10 @@
     --accent-color: #42c8fd;
 }
 
+ul {
+    list-style-type: disc;
+}
+
 body {
     background-color: var(--bg-color);
 }
