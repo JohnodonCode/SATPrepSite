@@ -191,17 +191,55 @@ const questions = {
 
     "easymath" : [
         {
-            "text": "A store sells two different-sized containers of a certain Greek yogurt. The store’s sales of this Greek yogurt totaled <strong>1,277.94</strong> dollars last month. The equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. According to the equation, which of the following represents the price, in dollars, of each smaller container?",
-            "question": "Which choice most logically completes the text?",
+            "text": "The function g is defined by g(x) = -x+8",
+            "question": "What is the value of g(0)?",
             "choices": [
-                "<strong>5.48</strong>",
-                "<strong>7.30y</strong>",
-                "<strong>7.30</strong>",
-                "<strong>5.48x</strong>"
+                "-8",
+                "0",
+                "4",
+                "8"
             ],
             "answer": 0,
             "rationale": "Choice A is correct. It's given that the store's sales of a certain Greek yogurt totaled <strong>1,277.94</strong> dollars last month. It's also given that the equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. Since <strong>x</strong> represents the number of smaller containers of yogurt sold, the expression <strong>5.48x</strong> represents the total sales, in dollars, from smaller containers of yogurt. This means that <strong>x</strong> smaller containers of yogurt were sold at a price of <strong>5.48</strong> dollars each. Therefore, according to the equation, <strong>5.48x</strong> represents the price, in dollars, of each smaller container. <br/><br/>Choice B is incorrect. This expression represents the total sales, in dollars, from selling <strong>y</strong> larger containers of yogurt. <br/><br/>Choice C is incorrect. This value represents the price, in dollars, of each larger container of yogurt.<br/><br/>Choice D is incorrect. This expression represents the total sales, in dollars, from selling <strong>x</strong> smaller containers of yogurt."
-        }
+        },
+        {
+          "text": "A store sells two different-sized containers of a certain Greek yogurt. The store’s sales of this Greek yogurt totaled <strong>1,277.94</strong> dollars last month. The equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold.",
+          "question": "According to the equation, which of the following represents the price, in dollars, of each smaller container?",
+          "choices": [
+              "<strong>5.48</strong>",
+              "<strong>7.30y</strong>",
+              "<strong>7.30</strong>",
+              "<strong>5.48x</strong>"
+          ],
+          "answer": 0,
+          "rationale": "Choice A is correct. It's given that the store's sales of a certain Greek yogurt totaled <strong>1,277.94</strong> dollars last month. It's also given that the equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. Since <strong>x</strong> represents the number of smaller containers of yogurt sold, the expression <strong>5.48x</strong> represents the total sales, in dollars, from smaller containers of yogurt. This means that <strong>x</strong> smaller containers of yogurt were sold at a price of <strong>5.48</strong> dollars each. Therefore, according to the equation, <strong>5.48x</strong> represents the price, in dollars, of each smaller container. <br/><br/>Choice B is incorrect. This expression represents the total sales, in dollars, from selling <strong>y</strong> larger containers of yogurt. <br/><br/>Choice C is incorrect. This value represents the price, in dollars, of each larger container of yogurt.<br/><br/>Choice D is incorrect. This expression represents the total sales, in dollars, from selling <strong>x</strong> smaller containers of yogurt."
+      },
+      {
+        "text": "A store sells two different-sized containers of a certain Greek yogurt. The store’s sales of this Greek yogurt totaled <strong>1,277.94</strong> dollars last month. The equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. According to the equation, which of the following represents the price, in dollars, of each smaller container?",
+        "question": "Which choice most logically completes the text?",
+        "choices": [
+            "<strong>5.48</strong>",
+            "<strong>7.30y</strong>",
+            "<strong>7.30</strong>",
+            "<strong>5.48x</strong>"
+        ],
+        "answer": 0,
+        "rationale": "Choice A is correct. It's given that the store's sales of a certain Greek yogurt totaled <strong>1,277.94</strong> dollars last month. It's also given that the equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. Since <strong>x</strong> represents the number of smaller containers of yogurt sold, the expression <strong>5.48x</strong> represents the total sales, in dollars, from smaller containers of yogurt. This means that <strong>x</strong> smaller containers of yogurt were sold at a price of <strong>5.48</strong> dollars each. Therefore, according to the equation, <strong>5.48x</strong> represents the price, in dollars, of each smaller container. <br/><br/>Choice B is incorrect. This expression represents the total sales, in dollars, from selling <strong>y</strong> larger containers of yogurt. <br/><br/>Choice C is incorrect. This value represents the price, in dollars, of each larger container of yogurt.<br/><br/>Choice D is incorrect. This expression represents the total sales, in dollars, from selling <strong>x</strong> smaller containers of yogurt."
+     },
+     {
+      "text": "A store sells two different-sized containers of a certain Greek yogurt. The store’s sales of this Greek yogurt totaled <strong>1,277.94</strong> dollars last month. The equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. According to the equation, which of the following represents the price, in dollars, of each smaller container?",
+      "question": "Which choice most logically completes the text?",
+      "choices": [
+          "<strong>5.48</strong>",
+          "<strong>7.30y</strong>",
+          "<strong>7.30</strong>",
+          "<strong>5.48x</strong>"
+      ],
+      "answer": 0,
+      "rationale": "Choice A is correct. It's given that the store's sales of a certain Greek yogurt totaled <strong>1,277.94</strong> dollars last month. It's also given that the equation <strong>5.48x + 7.30y = 1,277.94</strong> represents this situation, where <strong>x</strong> is the number of smaller containers sold and <strong>y</strong> is the number of larger containers sold. Since <strong>x</strong> represents the number of smaller containers of yogurt sold, the expression <strong>5.48x</strong> represents the total sales, in dollars, from smaller containers of yogurt. This means that <strong>x</strong> smaller containers of yogurt were sold at a price of <strong>5.48</strong> dollars each. Therefore, according to the equation, <strong>5.48x</strong> represents the price, in dollars, of each smaller container. <br/><br/>Choice B is incorrect. This expression represents the total sales, in dollars, from selling <strong>y</strong> larger containers of yogurt. <br/><br/>Choice C is incorrect. This value represents the price, in dollars, of each larger container of yogurt.<br/><br/>Choice D is incorrect. This expression represents the total sales, in dollars, from selling <strong>x</strong> smaller containers of yogurt."
+  },
+        
+
     ],
     "mediummath" : [
         
