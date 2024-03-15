@@ -255,8 +255,8 @@ const questions = {
   ],
   "mediummath" : [
     {
-      "text": "",
-      "question": "At how many points do the graphs of the equations <strong>y = x + 20</strong> and <strong>y=8x</strong> intersect in the xy-plane?",
+      "text": "At how many points do the graphs of the equations <strong>y = x + 20</strong> and <strong>y=8x</strong> intersect in the xy-plane?",
+      "question": "",
       "choices": [
           "<strong>0</strong>",
           "<strong>1</strong>",
