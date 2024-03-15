@@ -1,3 +1,4 @@
+
 :root {
     --bg-color: #f9fcfd;
     --text-color: #0d181c;
@@ -11,7 +12,11 @@ ul {
 }
 
 body {
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(184,215,255,1) 100%);
+    background-attachment: fixed;
 }
 
 .text-custom {

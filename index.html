@@ -6,23 +6,37 @@
     <title>Rapid SAT Questions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="index.js" defer></script>
+    <script src="tools.js" defer></script>
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-    <div class="pt-24 w-1/2 mx-auto flex flex-col text-custom text-center">
-        <h1 class="text-4xl font-bold">RapidSAT</h1>
-        <div class="md:w-3/4 flex mx-auto text-custom">
-            <div id="text" class="w-1/2 m-12 mt-20 text-lg">
-                <div class="choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-custom-primary cursor-pointer" id="math" onclick="pickType('math')">Math</div>
-                <div class="choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-black cursor-pointer" id="raw" onclick="pickType('raw')">Reading & Writing</div>
-            </div>
-            <div id="text" class="w-1/2 m-12 text-lg">
-                <div class="choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-custom-primary cursor-pointer" id="easy" onclick="pickDifficulty('easy')">Easy</div>
-                <div class="choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-black cursor-pointer" id="medium" onclick="pickDifficulty('medium')">Medium</div>
-                <div class="choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-black cursor-pointer" id="hard" onclick="pickDifficulty('hard')">Hard</div>
-            </div>
+    <div style="padding-top:12.5%;" class="w-full mx-auto flex flex-row text-custom text-center">
+        <div class="flex flex-col pt-6 w-1/4 mt-12">
+            <p class="mx-auto text-3xl pb-2 font-bold">Upcoming SAT<br/>Exams:</p>
+            <p class="mx-auto text-2xl">May 4, 2024</p>
+            <p class="mx-auto text-2xl">June 1, 2024</p>
         </div>
-        <p class="px-3 w-1/4 mx-auto py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-custom-primary cursor-pointer" onclick="start()">Start</p>
+
+        <div class="flex flex-col mx-auto w-1/2">
+            <h1 class="text-4xl font-bold">RapidSAT</h1>
+            <div class="md:w-3/4 flex flex-col mx-auto text-custom">
+                <div id="text" class="mx-auto mt-12 text-lg flex">
+                    <div class="ml-auto mr-4 choice px-4 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-custom-primary cursor-pointer" id="math" onclick="pickType('math')">Math</div>
+                    <div class="mr-auto choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-black cursor-pointer" id="raw" onclick="pickType('raw')">Reading & Writing</div>
+                </div>
+                <div id="text" class="mx-auto m-2 text-lg flex">
+                    <div class="ml-auto mr-4 px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-custom-primary cursor-pointer" id="easy" onclick="pickDifficulty('easy')">Easy</div>
+                    <div class="mx-auto choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-black cursor-pointer" id="medium" onclick="pickDifficulty('medium')">Medium</div>
+                    <div class="mr-auto ml-4 choice px-3 py-2 mb-4 text-xl border-4 border-solid rounded-2xl text-center border-black cursor-pointer" id="hard" onclick="pickDifficulty('hard')">Hard</div>
+                </div>
+            </div>
+            <p class="px-3 mt-6 w-1/4 mx-auto py-2 mb-8 text-xl border-4 border-solid rounded-2xl text-center border-custom-primary cursor-pointer" onclick="start()">Start</p>
+        </div>
+        
+        <div class="flex flex-col w-1/4 mt-12">
+            <p class="text-3xl px-12 mx-auto">Top🔥<span id="topStreak">0</span></p>
+            <p class="text-3xl px-12 mx-auto">Current🔥<span id="streak">0</span></p>
+        </div>
     </div>
 </body>
 </html>

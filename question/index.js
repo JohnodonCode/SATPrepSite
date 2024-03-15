@@ -1,3 +1,25 @@
+let score = 0;
+let topScore = 0;
+// on dom loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // get the current streak from the cookie
+    let currentStreak = getCookie("currentStreak");
+    let topStreak = getCookie("topStreak");
+
+    // if the top streak is not empty
+    if (topStreak !== "") {
+        // set the top streak to the top streak
+        document.getElementById("topStreak").innerHTML = topStreak;
+        topScore = topStreak;
+    }
+    // if the current streak is not empty
+    if (currentStreak !== "") {
+        // set the streak to the current streak
+        document.getElementById("streak").innerHTML = currentStreak;
+        score = currentStreak;
+    }
+});
+
 const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
   });
@@ -87,7 +109,6 @@ switch (params.t) {
 }
 
 let questionNumber = 0;
-let score = 0;
 
 function setQuestion() {
     text.innerHTML = possiblequestions[questionNumber].text;
@@ -128,8 +149,15 @@ function checkAnswer() {
 
     if (currentchoice == answer) {
         score++;
+        setCookie("currentStreak", score, 100);
+        if (score > topScore) {
+            topScore = score;
+            setCookie("topStreak", topScore, 100);
+            document.getElementById("topStreak").innerHTML = topScore;
+        }
     } else { 
         score = 0;
+        setCookie("currentStreak", score, 100);
         document.getElementById("choice" + choice).classList.add("border-red-500");
     }
     document.getElementById("streak").innerHTML = score;

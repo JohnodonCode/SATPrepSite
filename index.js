@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // get the current streak from the cookie
+    let currentStreak = getCookie("currentStreak");
+    let topStreak = getCookie("topStreak");
+
+    // if the top streak is not empty
+    if (topStreak !== "") {
+        // set the top streak to the top streak
+        document.getElementById("topStreak").innerHTML = topStreak;
+        topScore = topStreak;
+    }
+    // if the current streak is not empty
+    if (currentStreak !== "") {
+        // set the streak to the current streak
+        document.getElementById("streak").innerHTML = currentStreak;
+        score = currentStreak;
+    }
+});
+
 let type = 0;
 let difficulty = 0;
 
